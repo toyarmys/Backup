@@ -1,0 +1,22 @@
+// Style https://github.com/magento/magento2/blob/2.3/lib/web/css/source/lib/_dropdowns.less
+
+& when (@media-common = false) {
+    .magento__dropdown-widget {
+        .lib-dropdown(
+            @_toggle-selector : ~".action.toggle",
+            @_options-selector : ~"ul.dropdown-options"
+        );
+    }
+
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .minicart-wrapper {
+        float: left;
+        margin-left: 0;
+        .block-minicart {
+            left: -15px;
+            width: 390px;
+            right: auto;
+        }
+    }
+}

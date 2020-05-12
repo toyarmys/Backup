@@ -1,0 +1,15 @@
+<?php if($block->isEnable()) : ?>
+<script type="text/x-magento-template" id="product-price-totals-template">
+    <p class="items"><%= $t('%1 item(s)').replace('%1', qty) %></p>
+    <p class="price-wrapper"><span class="price"><%= priceUtils.formatPrice(amount, currencyFormat) %></span></p>
+</script>
+<div class="product_price_totals-warper">
+    <h2><?= __('Add to Basket') ?></h2>
+    <div class="product_price_totals">
+        <p class="items"><?= __('%1 item(s)', 0) ?></p>
+        <p class="price-wrapper">
+            <span class="price"><?= $block->getFormatedPrice(0) ?></span>
+        </p>
+    </div>
+</div>
+<?php endif; ?>

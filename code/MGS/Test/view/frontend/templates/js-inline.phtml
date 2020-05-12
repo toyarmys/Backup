@@ -1,0 +1,94 @@
+<?php
+
+/* Inline JS example
+   https://github.com/magento/magento2/blob/2.3/lib/web/mage/dropdown.js
+*/
+
+?>
+
+<div class="magento__dropdown-widget">
+    <span class="action toggle"
+          data-toggle="dropdown"
+          aria-haspopup="false"
+          data-mage-init='{"dropdown":{"autoclose": false}}'>
+        <span>Dropdown Opener Button</span>
+     </span>
+    <ul class="dropdown-options" data-target="dropdown">
+        <li>
+            <span class="item">Dropdown Item One</span>
+        </li>
+        <li>
+            <span class="item"><a href="#">Dropdown Item Two, With Link</a></span>
+        </li>
+        <li>
+            <span class="item">Dropdown Item Three</span>
+        </li>
+    </ul>
+</div>
+<div style="clear:both;"></div>
+<hr />
+<!-- dropdownDialog  -->
+
+<!--<div data-block="dropdown" class="minicart-wrapper">
+    <button type="button" class="action" data-trigger="trigger">
+        <span data-bind="i18n: 'Click Here'"></span>
+    </button>
+</div>
+<div class="block block-minicart"
+     data-mage-init='{
+        "dropdownDialog": {
+            "appendTo": "[data-block=dropdown]",
+            "triggerTarget":"[data-trigger=trigger]",
+            "timeout": 2000,
+            "closeOnMouseLeave": false,
+            "closeOnEscape": true,
+            "autoOpen": false,
+            "triggerClass": "active",
+            "parentClass": "active",
+            "buttons": []
+        }
+     }'>
+    <div id="minicart-content-wrapper">
+        Here is our content
+    </div>
+</div>-->
+
+<div data-block="dropdown" class="minicart-wrapper">
+    <button type="button" class="action" data-trigger="trigger">
+        <span data-bind="i18n: 'Click Here'"></span>
+    </button>
+</div>
+<div class="block block-minicart">
+    <div id="minicart-content-wrapper">
+        Here is our content
+    </div>
+</div>
+
+<div style="clear:both;"></div>
+
+<hr />
+
+<script type="text/x-magento-init">
+    {
+        ".block-minicart": {
+            "dropdownDialog": {
+                "appendTo": "[data-block=dropdown]",
+                "triggerTarget":"[data-trigger=trigger]",
+                "timeout": 2000,
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "autoOpen": false,
+                "triggerClass": "active",
+                "parentClass": "active",
+                "buttons": []
+            }
+        }
+    }
+</script>
+
+
+<!--<script>
+    require(['jquery', 'mage/dropdowns'], function ($) {
+        $('.magento__dropdown-widget').dropdown();
+    })
+</script>-->

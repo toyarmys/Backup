@@ -1,0 +1,134 @@
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="AHT\Demo\Block\Widget\Test" id="AHT_Demo_widget">
+        <label>My New Widget</label>
+        <description>This is a test widget!!!</description>
+        <parameters>
+            <parameter name="dots" xsi:type="select" visible="true" required="true" sort_order="10">
+                <label translate="true">Dots</label>
+                <options>
+                    <option name="true" value="True">
+                        <label>True</label>
+                    </option>
+                    <option name="false" value="False">
+                        <label>False</label>
+                    </option>
+                </options>
+        </parameter>
+        <parameter name="infinite" xsi:type="select" visible="true" required="true" sort_order="20">
+            <label translate="true">Infinite</label>
+            <options>
+                    <option name="true" value="True">
+                        <label>True</label>
+                    </option>
+                    <option name="false" value="False">
+                        <label>False</label>
+                    </option>
+                </options>
+        </parameter>
+        <parameter name="speed" xsi:type="select" visible="true" required="true" sort_order="30">
+            <label translate="true">Speed</label>
+            <options>
+                    <option name="50" value="50">
+                        <label>50</label>
+                    </option>
+                    <option name="100" value="100">
+                        <label>100</label>
+                    </option>
+                    <option name="150" value="150">
+                        <label>150</label>
+                    </option>
+                    <option name="200" value="200">
+                        <label>200</label>
+                    </option>
+                    <option name="250" value="250">
+                        <label>250</label>
+                    </option>
+                    <option name="300" value="300">
+                        <label>300</label>
+                    </option>
+                </options>
+        </parameter>
+        <parameter name="slidesToShow" xsi:type="select" visible="true" required="true" sort_order="40">
+            <label translate="true">slideToShow</label>
+            <options>
+                    <option name="1" value="1">
+                        <label>1</label>
+                    </option>
+                    <option name="2" value="2">
+                        <label>2</label>
+                    </option>
+                    <option name="3" value="3">
+                        <label>3</label>
+                    </option>
+                    <option name="4" value="4">
+                        <label>4</label>
+                    </option>
+                    <option name="5" value="5">
+                        <label>5</label>
+                    </option>
+                    <option name="6" value="6">
+                        <label>6</label>
+                    </option>
+                </options>
+        </parameter>
+        <parameter name="slidesToScroll" xsi:type="select" visible="true" required="true" sort_order="50">
+            <label translate="true">slideToScroll</label>
+            <options>
+                    <option name="1" value="1">
+                        <label>1</label>
+                    </option>
+                    <option name="2" value="2">
+                        <label>2</label>
+                    </option>
+                    <option name="3" value="3">
+                        <label>3</label>
+                    </option>
+                    <option name="4" value="4">
+                        <label>4</label>
+                    </option>
+                    <option name="5" value="5">
+                        <label>5</label>
+                    </option>
+                    <option name="6" value="6">
+                        <label>6</label>
+                    </option>
+                </options>
+        </parameter>
+        <parameter name="autoPlay" xsi:type="select" visible="true" required="true" sort_order="60">
+            <label translate="true">autoPlay</label>
+            <options>
+                    <option name="true" value="True">
+                        <label>True</label>
+                    </option>
+                    <option name="false" value="False">
+                        <label>False</label>
+                    </option>
+                </options>
+        </parameter>
+        <parameter name="autoPlaySpeed" xsi:type="select" visible="true" required="true" sort_order="70">
+            <label translate="true">autoPlaySpeed</label>
+            <options>
+                    <option name="500" value="500">
+                        <label>500</label>
+                    </option>
+                    <option name="1000" value="1000">
+                        <label>1000</label>
+                    </option>
+                    <option name="1500" value="1500">
+                        <label>1500</label>
+                    </option>
+                    <option name="2000" value="2000">
+                        <label>2000</label>
+                    </option>
+                    <option name="2500" value="2500">
+                        <label>2500</label>
+                    </option>
+                    <option name="3000" value="3000">
+                        <label>3000</label>
+                    </option>
+                </options>
+        </parameter>
+        </parameters>
+    </widget>
+</widgets>

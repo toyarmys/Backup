@@ -1,0 +1,83 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <!-- The new step you add -->
+                                        <!--<item name="my-new-step" xsi:type="array">
+                                            <item name="component" xsi:type="string">MGS_Test/js/my-step-view</item>
+                                            &lt;!&ndash;To display step content before shipping step "sortOrder" value should be < 1&ndash;&gt;
+                                            &lt;!&ndash;To display step content between shipping step and payment step  1 < "sortOrder" < 2 &ndash;&gt;
+                                            &lt;!&ndash;To display step content after payment step "sortOrder" > 2 &ndash;&gt;
+                                            <item name="sortOrder" xsi:type="string">0</item>
+                                            <item name="children" xsi:type="array">
+                                                &lt;!&ndash;add here child component declaration for your step&ndash;&gt;
+                                            </item>
+                                        </item>-->
+                                        <!--Custom Shipping Steps-->
+                                        <!--<item name="shipping-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="shippingAddress" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="before-form" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="customElement" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">MGS_Test/js/view/customElement</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>-->
+
+                                        <!--<item name="billing-step" xsi:type="array">
+                                            <item name="component" xsi:type="string">uiComponent</item>
+                                            <item name="children" xsi:type="array">
+                                                <item name="payment" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="additional-payment-validators" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                &lt;!&ndash; Declare your validation. START &ndash;&gt;
+                                                                <item name="newValidator" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">MGS_Test/js/view/pool-validator</item>
+                                                                </item>
+                                                                &lt;!&ndash; Declare your validation. END &ndash;&gt;
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>-->
+
+                                        <item name="shipping-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="step-config" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="shipping-rates-validation" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="newShippingCarrier" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">MGS_Test/js/view/pool-shipping-carrier</item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

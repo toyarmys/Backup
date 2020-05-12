@@ -1,0 +1,33 @@
+<?php 
+    $productCollection = $block->getCategoryProducts(42);
+    $mediaUrl = $block->getProductUrlImage();
+?>
+<h1 style="text-align:center;"><?php echo $block->getTitle(); ?></h1>
+<ul class="my-list">
+    <?php 
+        foreach ($productCollection as $product) {
+            echo '<li><img src="' .
+            $mediaUrl .
+            $product->getData()['small_image'] .
+            '" alt="Image 1"></li>';
+            }
+    ?>
+</ul>
+<script>
+    require([
+        'jquery',
+        'slick'
+    ], function ($) {
+        $(document).ready(function () {
+            $(".my-list").slick({
+                dots: <?= $block->escapeHtml($block->getData('dots')) ?>,
+                infinite: <?= $block->escapeHtml($block->getData('infinite')) ?>,
+                speed: <?= $block->escapeHtml($block->getData('speed')) ?>,
+                slidesToShow: <?= $block->escapeHtml($block->getData('slideToShow')) ?>,
+                slidesToScroll: <?= $block->escapeHtml($block->getData('slideToScroll')) ?>,
+                autoplay: <?= $block->escapeHtml($block->getData('autoPlay')) ?>,
+                autoplaySpeed: <?= $block->escapeHtml($block->getData('autoPlaySpeed')) ?>,
+            });
+        });
+    });
+</script>

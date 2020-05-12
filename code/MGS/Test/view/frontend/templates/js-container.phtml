@@ -1,0 +1,27 @@
+<div id="my-collapsible" data-mage-init='{"MGS_Test/js/dynamic-content": {"active": true, "saveState": true, "ajaxContent": true}}'>
+    <div data-role='title'>
+        <h2>Example for Collapsible <button data-role='strigger'>Go</button></h2>
+    </div>
+    <div data-role='content'>
+
+    </div>
+    <a href="<?= $block->getViewFileUrl('MGS_Test/example.html'); ?>" data-ajax="true"></a>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "startSimple": {
+                        "component": "MGS_Test/js/plain-view-model",
+                        "base_url": "<?= $block->escapeJs($block->getBaseUrl()) ?>"
+                    }
+                }
+            }
+        }
+    }
+</script>
+<div data-bind="scope: 'startSimple'">
+    <div data-bind="text: output"></div>
+</div>

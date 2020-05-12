@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mgs_customeize_configurable>
+            <general>
+                <enabled>1</enabled>
+                <use_default>0</use_default>
+                <show_stock>0</show_stock>
+            </general>
+        </mgs_customeize_configurable>
+    </default>
+</config>
